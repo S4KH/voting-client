@@ -7,7 +7,7 @@ import {
 } from 'react-addons-test-utils';
 import {expect} from 'chai';
 import {List} from 'immutable';
-import Voting from '../../src/components/Voting';
+import {Voting} from '../../src/components/Voting';
 
 describe('Voting', () => {
 

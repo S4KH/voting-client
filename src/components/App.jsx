@@ -7,10 +7,7 @@ const tally = Map({'Trainspotting': 5, '28 days later': 4});
 export default class App extends Component {
   render() {
     return (
-      React.cloneElement(this.props.children, {
-        pair: pair,
-        tally: tally
-      })
+      this.props.children
     );
   }
 }

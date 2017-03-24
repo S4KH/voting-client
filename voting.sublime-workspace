@@ -1,0 +1,553 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Rac",
+				"ReactDOM"
+			],
+			[
+				"nex",
+				"nextInvoked"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"get",
+				"getPair"
+			],
+			[
+				"rou",
+				"Router"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"React",
+				"ReactDOM"
+			],
+			[
+				"co",
+				"contain"
+			],
+			[
+				"Reac",
+				"ReactDOM"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"render",
+				"renderIntoDocument"
+			],
+			[
+				"c",
+				"className"
+			],
+			[
+				"hasv",
+				"hasVotedFor"
+			],
+			[
+				"but",
+				"buttons"
+			],
+			[
+				"vot",
+				"VOTE"
+			],
+			[
+				"ne",
+				"NEXT"
+			],
+			[
+				"next",
+				"nextState"
+			],
+			[
+				"t",
+				"Trainspotting"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "import React, { Component } from 'react';\nimport PureRenderMixin from 'react-addons-pure-render-mixin';\n\nimport Winner from './Winner';\nimport Tally from './Tally';\n\nexport default class Results extends Component {\n  constructor(props){\n    super(props);\n    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);\n  }\n  getPair(){\n    return this.props.pair || [];\n  }\n\n  render() {\n    return (\n      this.props.winner ? <Winner ref=\"winner\" winner={this.props.winner}/> :\n      <div className=\"results\">\n        <Tally {...this.props} />\n        <div className=\"management\">\n          <button ref=\"next\" className=\"next\" onClick={this.props.next}>\n            Next\n          </button>\n        </div>\n      </div>\n    );\n  }\n}",
+			"file": "src/components/Results.jsx",
+			"file_size": 752,
+			"file_write_time": 131347198694058780,
+			"settings":
+			{
+				"buffer_size": 751,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/Tally.jsx",
+			"settings":
+			{
+				"buffer_size": 600,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/Vote.jsx",
+			"settings":
+			{
+				"buffer_size": 847,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/components/Results_spec.jsx",
+			"settings":
+			{
+				"buffer_size": 1736,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/App.jsx",
+			"settings":
+			{
+				"buffer_size": 380,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"co",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 484.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"cls",
+			"csl",
+			"clear",
+			"novde -v",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/skh/Projects/voting-client",
+		"/home/skh/Projects/voting-client/src",
+		"/home/skh/Projects/voting-client/src/components",
+		"/home/skh/Projects/voting-client/test",
+		"/home/skh/Projects/voting-client/test/components"
+	],
+	"file_history":
+	[
+		"/home/skh/.config/sublime-text-3/Packages/jsfmt/jsfmt.sublime-settings",
+		"/home/skh/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/home/skh/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/home/skh/Projects/voting-client/test/components/Voting_spec.jsx",
+		"/home/skh/Projects/voting-client/src/components/Voting.jsx",
+		"/home/skh/Projects/voting-client/src/components/Winner.jsx",
+		"/home/skh/Projects/voting-client/src/index.jsx",
+		"/home/skh/Projects/voting-client/package.json",
+		"/home/skh/Projects/voting-client/src/components/Results.jsx",
+		"/home/skh/Projects/voting-client/src/components/App.jsx",
+		"/home/skh/Projects/voting-client/src/components/Vote.jsx",
+		"/home/skh/.config/sublime-text-3/Packages/User/auto_save.sublime-settings",
+		"/home/skh/Projects/voting-client/test/test_helper.js",
+		"/home/skh/Projects/voting-client/webpack.config.js",
+		"/home/skh/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/skh/.config/sublime-text-3/Packages/auto-save/auto_save.sublime-settings",
+		"/home/skh/.config/sublime-text-3/Packages/auto-save/README.md",
+		"/home/skh/.config/sublime-text-3/Packages/User/reg_replace.sublime-settings",
+		"/home/skh/.config/sublime-text-3/Packages/User/Emmet.sublime-settings",
+		"/home/skh/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/skh/.config/sublime-text-3/Packages/User/jsfmt.sublime-settings",
+		"/home/skh/Projects/voting-client/src/components/Voting_spec.jsx",
+		"/home/skh/Projects/voting-client/src/index.js",
+		"/home/skh/Projects/voting-client/dist/index.html",
+		"/home/skh/Projects/voting-server/src/server.js",
+		"/home/skh/Projects/voting-server/index.js",
+		"/home/skh/Projects/voting-server/entries.json",
+		"/home/skh/Projects/voting-server/package.json",
+		"/home/skh/Projects/voting-server/src/reducer.js",
+		"/home/skh/Projects/voting-server/test/store_spec.js",
+		"/home/skh/Projects/voting-server/src/store.js",
+		"/home/skh/Projects/voting-server/test/reducer_spec.js",
+		"/home/skh/Projects/voting-server/test/core_spec.js",
+		"/home/skh/Projects/voting-server/src/core.js",
+		"/home/skh/.config/sublime-text-3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/home/skh/Projects/voting-server/test/test_helper.js",
+		"/home/skh/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap",
+		"/home/skh/.config/sublime-text-3/Packages/SublimeLinter/Default (Linux).sublime-keymap",
+		"/home/skh/.config/sublime-text-3/Packages/Babel/Babel.sublime-settings",
+		"/home/skh/.config/sublime-text-3/Packages/User/Babel.sublime-settings",
+		"/home/skh/.config/sublime-text-3/Packages/User/trailing_spaces.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"map"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/components/Results.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								745,
+								745
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/components/Tally.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/components/Vote.jsx",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "test/components/Results_spec.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1736,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/components/App.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59,
+								59
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "voting.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"voting",
+				"test/components/Voting_spec.jsx"
+			],
+			[
+				"app",
+				"src/components/App.jsx"
+			],
+			[
+				"resul",
+				"src/components/Results.jsx"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"inde",
+				"src/index.jsx"
+			],
+			[
+				"winn",
+				"src/components/Winner.jsx"
+			],
+			[
+				"votin",
+				"test/components/Voting_spec.jsx"
+			],
+			[
+				"we",
+				"webpack.config.js"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"core",
+				"src/core.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
